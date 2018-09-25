@@ -89,61 +89,67 @@ const handleWeather = (data) => {
   let image = document.getElementById("icon");
 
   if (tempDescription === "Rain") {
-    document.body.style.background = "url('https://source.unsplash.com/b-sTYb0quYQ') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
-    image.src = "img/rainy-1.svg"; 
+      if (today >= 7 && today <= 19) {
+        document.body.style.background = "url('https://source.unsplash.com/b-sTYb0quYQ') no-repeat center center fixed";
+        document.body.style.backgroundSize = "cover";
+        image.src = "img/rainy-1.svg"; 
+      }
 
-      if (today <= 7 && today >= 19) {
+      else {
         document.body.style.background = "url('https://source.unsplash.com/LM4X_cIjjQ8') no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
         image.src = "img/rainy-7.svg"; 
       }
 
   } else if (tempDescription === "Thunderstorm") {
-    document.body.style.background = "url('https://source.unsplash.com/2uOcrLACf_4') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
-    image.src = "img/thunder.svg"; 
-
-      if (today <= 7 && today >= 19) {
+      if (today >= 7 && today <= 19) {
+        document.body.style.background = "url('https://source.unsplash.com/2uOcrLACf_4') no-repeat center center fixed";
+        document.body.style.backgroundSize = "cover";
+        image.src = "img/thunder.svg"; 
+      }
+      else {
         document.body.style.background = "url('https://source.unsplash.com/vP5Im4q8Z6g') no-repeat center center fixed";
       }
 
   } else if (tempDescription === "Snow") {
-    document.body.style.background = "url('https://source.unsplash.com/pY1FKeEP8v8') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
-    image.src = "img/snowy-3.svg"; 
-
-      if (today <= 7 && today >= 19) {
+      if (today >= 7 && today <= 19) {
+        document.body.style.background = "url('https://source.unsplash.com/pY1FKeEP8v8') no-repeat center center fixed";
+        document.body.style.backgroundSize = "cover";
+        image.src = "img/snowy-3.svg"; 
+      }
+      else {
         document.body.style.background = "url('https://source.unsplash.com/73osnYZ133o') no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
         image.src = "img/snowy-6.svg"; 
       }
 
   } else if (tempDescription === "Clear") {
-    document.body.style.background = "url('https://source.unsplash.com/E9aetBe2w40') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
-    image.src = "img/day.svg"; 
-
-      if (today <= 7 && today >= 19) {
+      if (today >= 7 && today <= 19) {
+        document.body.style.background = "url('https://source.unsplash.com/E9aetBe2w40') no-repeat center center fixed";
+        document.body.style.backgroundSize = "cover";
+        image.src = "img/day.svg"; 
+      }
+      else {
         document.body.style.background = "url('https://source.unsplash.com/UiO6KzrBTJk') no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
         image.src = "img/night.svg"; 
       }
 
   } else if (tempDescription === "Clouds") {
-    document.body.style.background = "url('https://source.unsplash.com/3Eqc3Ph4oRg') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
-    image.src = "img/cloudy-day-2.svg"; 
-      
-      if (today <= 7 && today >= 19) {
+      if (today >= 7 && today <= 19) {
+        document.body.style.background = "url('https://source.unsplash.com/3Eqc3Ph4oRg') no-repeat center center fixed";
+        document.body.style.backgroundSize = "cover";
+        image.src = "img/cloudy-day-2.svg"; 
+      }
+      else {
         document.body.style.background = "url('https://source.unsplash.com/B31OD0bsYV0') no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
         image.src = "img/cloudy-night-2.svg"; 
       }
 
   } else 
-    document.body.style.background = "url('https://source.unsplash.com/3Eqc3Ph4oRg') no-repeat center center fixed";
-    document.body.style.backgroundSize = "cover";
+      document.body.style.background = "url('https://source.unsplash.com/3Eqc3Ph4oRg') no-repeat center center fixed";
+      document.body.style.backgroundSize = "cover";
   }
 
 
