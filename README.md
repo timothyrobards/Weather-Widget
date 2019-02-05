@@ -5,3 +5,4 @@ SVG and background image will change to reflect both day/night & current conditi
 
 ºC and ºF conversion when temp is clicked 
   
+ 
